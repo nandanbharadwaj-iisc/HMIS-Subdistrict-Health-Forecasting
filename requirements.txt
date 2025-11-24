@@ -1,0 +1,17 @@
+# Core numerics & data handling
+numpy
+pandas
+
+# Visualization
+matplotlib
+plotly
+
+# Streamlit dashboard
+streamlit
+
+# Spark (model training / feature engineering)
+pyspark
+
+# Notebook tooling
+jupyterlab
+ipykernel

@@ -84,7 +84,6 @@ The workflow has two main parts:
 ```text
 HMIS-Subdistrict-Health-Forecasting/
 ├─ README.md                     # GitHub-friendly README (this file)
-├─ readme.txt                    # Original text version
 ├─ setup.sh                      # venv + requirements + Jupyter launcher
 ├─ requirements.txt              # Python dependencies
 ├─ HMIS_SubDistrict_Health_Trend_Forecasting.ipynb

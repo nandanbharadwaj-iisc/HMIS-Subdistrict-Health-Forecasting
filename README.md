@@ -235,17 +235,9 @@ jupyter lab
 
 - Ensure that:
   - Model training & evaluation cells run without errors.
-  - Output CSVs are generated (in `output_dir/` or directly in `streamlit_app/data/`).
+  - Output CSVs are generated (in `output_dir/`).
 
-6. **Copy outputs for the dashboard (if needed)**
-
-If the notebook writes to `output_dir/`, copy the files to `streamlit_app/data/`:
-
-```bash
-cp output_dir/metrics_v6.csv streamlit_app/data/
-cp output_dir/best_model_per_target_v6.csv streamlit_app/data/
-cp output_dir/forecast_timeseries.csv streamlit_app/data/
-```
+  **When you run the Streamlit app, it copies the necessary data files from output_dir/ to streamlit_app/data/**
 
 ---
 

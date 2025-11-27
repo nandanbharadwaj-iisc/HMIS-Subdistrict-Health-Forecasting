@@ -52,6 +52,9 @@ The workflow has two main parts:
      - District / Subdistrict explorer
      - Model performance comparison across algorithms
 
+> ℹ️ **Note:** The main HMIS dataset is stored using **Git LFS**.  
+> You **must** have Git LFS installed and configured, a plain `git clone` will not download the dataset.
+
 ---
 
 ## Features
@@ -136,6 +139,22 @@ HMIS-Subdistrict-Health-Forecasting/
 ### Prerequisites
 
 - Git
+- **Git LFS** (required to download the HMIS dataset tracked via LFS)
+  - Install Git LFS (choose one based on your OS):
+    - **macOS (Homebrew)**  
+      ```bash
+      brew install git-lfs
+      ```
+    - **Linux (Debian/Ubuntu)**  
+      ```bash
+      sudo apt-get update
+      sudo apt-get install git-lfs
+      ```
+    - Or follow the official instructions from the Git LFS site.
+  - Then enable Git LFS (once per machine):
+    ```bash
+    git lfs install
+    ```
 - Python **3.11.14** available as `python3.11`  
   (via pyenv, Homebrew, or system package manager)
 - Node.js **not required** (Streamlit runs purely in Python)
@@ -143,7 +162,7 @@ HMIS-Subdistrict-Health-Forecasting/
 ### 1. Clone the repository
 
 ```bash
-git clone <your_repo_url>.git
+git lfs clone <your_repo_url>.git
 cd HMIS-Subdistrict-Health-Forecasting
 ```
 
